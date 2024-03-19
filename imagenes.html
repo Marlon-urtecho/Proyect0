@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Busqueda Imagenes</title>
+
+        <link rel="preload" href="CSS/normalize.css">
+        <link  rel="stylesheet" href="CSS/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preload" href="sass/Style.css" as="Styles">
+        <link href="sass/Style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+
+        <main class="Contenedor">
+
+            <header class="contenedor__header header__position" role="banner"></header>
+
+            <div class="nav-bg">
+                <nav class="navegacion-principal  contenedor">
+                    <a href="index.html">Inicio</a>
+                    <a href="imagenes.html">Imagenes</a>
+                    <a href="Avanzada.html">Busqueda Avanzada</a>
+                </nav>
+            </div>
+
+            </header>
+
+            <section class="hero1" >
+
+                <div class="contenido-hero">
+
+                    <h2 >Google <samp>Imagenes</samp></h2>
+
+                    <div class="ubicacion">
+
+                        <form class="formulario" action="https://google.com/search" method="GET" target="_blank">
+
+                            <fieldset>
+
+                                <input type="hidden" name="tbm" value="isch">
+                            <input type="text" name="q" placeholder="Buscar en Google Imágenes">
+                            <input type="submit" value="Buscar">
+
+                            </fieldset>
+
+                        </form>
+
+                    </div>
+
+                </div> <!--.CONTENIDO HERO-->
+
+                </section>
+
+        </main>
+
+        <foote class="footer">
+            <p>Todos los derechos reservados. Marlon Urtecho Freelancer</p>
+        </footer>
+
+
+    </body>
+</html>

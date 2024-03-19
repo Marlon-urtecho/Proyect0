@@ -1,0 +1,399 @@
+@charset "UTF-8";
+:root {
+  --blanco: #FFFFFF;
+  --oscuro: #212121;
+  --primario: #FFc107;
+  --secundario: #0097A7;
+  --gris: #757575;
+  --gris-claro: #DFE9F3;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  /* Hack para box model */
+  scroll-snap-type: mandatory;
+}
+
+/*scroll snap */
+.navegacion-principal,
+.formulario {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font: size 16px;
+  /*1rem = 10px */
+  font-family: "Krub", sans-serif;
+  /*Agregamos el estio a todos los textos en el documento*/
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+/* Navegacion principal */
+.nav-bg {
+  background-color: var(--oscuro);
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: end;
+  }
+}
+.navegacion-principal a {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+
+/*Titulos*/
+.titulo span {
+  font-size: 2rem;
+}
+
+.contenedor {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url(../imge/85472-hito-horizonte-urbe-paisaje_urbano-la_ciudad_de_nueva_york-3840x2160.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.contenido-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contenido-hero h2 {
+  color: var(--primario);
+  font-size: 4rem;
+}
+
+.contenido-hero samp {
+  color: var(--secundario);
+}
+
+.contenido-hero .ubicacion {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10rem;
+}
+
+.footer {
+  text-align: center;
+}
+
+.formulario__botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+input[type=submit] {
+  background-color: #303134;
+  color: var(--blanco);
+  padding: 1.3rem 0.5rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.8rem;
+  text-align: center;
+  border: none;
+  width: 12rem;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #FFc107;
+  color: #212121;
+}
+
+input[type=text] {
+  width: 57rem;
+  height: 4rem;
+  color: var(--blanco);
+  border-radius: 0.8rem;
+  padding: inherit;
+  background-color: transparent;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formulario form {
+  background-color: var(--gris);
+  width: min(60rem, 100%);
+  /*utiliza el valor mas pequeñ0 */
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero1 {
+  background-image: url(../imge/luna.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* Navegacion principal */
+.nav-bg2 {
+  background-color: var(--blanco);
+}
+
+.navegacion-principal2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal2 {
+    flex-direction: row;
+    justify-content: end;
+  }
+}
+.navegacion-principal2 a {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--oscuro);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.navegacion-principal2 a:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+
+.navegacion__enlaces {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navegacion__texto img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70%;
+  width: 70%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+/*Titulos*/
+.titulo span {
+  font-size: 2rem;
+}
+
+.contenedor2 {
+  display: flex;
+  max-width: 120rem;
+  justify-content: space-between;
+}
+
+.hero2 {
+  height: 450px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.contenido-hero2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.contenido-hero h2 {
+  color: var(--primario);
+  font-size: 4rem;
+}
+
+.contenido-hero samp {
+  color: var(--secundario);
+}
+
+.contenido-hero .ubicacion {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10rem;
+}
+
+.contenido__titulo {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--gris);
+  margin-left: 3rem;
+}
+
+.footer {
+  text-align: center;
+}
+
+.formulario__botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #FFc107;
+  color: #212121;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formulario form {
+  background-color: var(--gris);
+  width: min(60rem, 100%);
+  /*utiliza el valor mas pequeñ0 */
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.formulario2 fieldset {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+.formulario__titulos {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 34rem;
+}
+.formulario__titulos h3 {
+  font-size: 1.5rem;
+}
+
+.formulario__labels {
+  display: flex;
+  font-size: 1rem;
+  justify-content: right;
+  gap: 4.4rem;
+  flex-direction: column;
+}
+
+.formulario__labels h2 {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.formulario__texto input {
+  margin: 1.5rem;
+  border-radius: 0;
+  height: 2.5rem;
+  color: black;
+}
+
+.formulario__texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formulario__boton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formulario__boton input {
+  height: auto;
+  width: 10rem;
+  border-radius: 0%;
+  color: var(--blanco);
+  background-color: #4d90fe;
+  font-weight: 900;
+}
+
+.rango input {
+  width: 17.8rem;
+}/*# sourceMappingURL=Style.css.map */

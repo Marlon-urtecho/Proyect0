@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Busqueda Avanzada</title>
+
+        <link rel="preload" href="CSS/normalize.css">
+        <link rel="stylesheet" href="CSS/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preload" href="sass/Style.css" as="Styles">
+        <link href="sass/Style.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <di class="nav-bg2">
+
+            <nav class="navegacion-principal2  contenedor2">
+
+                <a class="navegacion__texto" href="https://google.com/search" >
+
+                    <span>
+                            <img src="imge/googlelogo_clr_74x24px.svg" alt="imagenlogo">
+                    </span>
+
+                </a>
+
+                <div class="navegacion__enlaces">
+
+                <a href="index.html">Inicio</a>
+                <a href="imagenes.html">Imagenes</a>
+                <a href="Avanzada.html">Busqueda Avanzada</a>
+
+                </div>
+
+            </nav>
+        </div>
+
+        <main class="Contenedor2">
+
+            <section class="hero2" >
+
+                <div class="contenido-hero2">
+
+                    <div class="contenido__titulo">
+                        <h2>Búsqueda<samp> Avanza</samp></h2>
+                    </div>
+
+                    <div class="ubicacion">
+
+                        <!-- <input type="text" name="q" placeholder="Ingrese busqueda de google">
+                            <input type="submit" value="Google Search">
+                            -->
+
+                        <form class="formulario2" action="https://google.com/search" method="GET">
+
+                            <div class="formulario__titulos">
+                                <h3>Mostar paginas que contengan....</h3>
+                                <h3>Para hacer esto en el cuadro de busqueda</h3>
+                            </div>
+
+                            <fieldset >
+
+                                <div class="formulario__labels">
+
+                                    <label for="allWords">Todas estas palabras:</label>
+                                    <label for="exactPhrase">Frase exacta:</label>
+                                    <label for="anyWords">Cualquier palabra:</label>
+                                    <label for="excludeWords">Excluir estas palabras:</label>
+                                    <label for="excludeWords">números del</label>
+                                </div>
+
+                                <div class="formulario__texto">
+
+                                    <input type="text" id="allWords" name="q">
+                                    <input type="text" id="exactPhrase" name="as_epq">
+                                    <input type="text" id="anyWords" name="as_oq">
+                                    <input type="text" id="excludeWords" name="as_eq">
+
+
+                                    <div class="rango">
+                                        <input type="text" id="excludeWords" name="as_nlo">
+                                        <label for="excludeWords"> al </label>
+                                        <input type="text" id="excludeWords" name="as_nhi">
+                                    </div>
+
+                                </div>
+
+                                <div class="formulario__labels">
+
+                                    <label for="allWords">Ingresa las palabras importantes: Terrier ratonero tricolor</label>
+                                    <label for="exactPhrase">Ingresa las palabras exactas entre comillas: "Terrier ratonero"</label>
+                                    <label for="anyWords">Ingresa OR entre las palabras que desees: En miniatura OR estándar</label>
+                                    <label for="excludeWords">Ingresa un signo menos justo delante de las palabras que no deseas que aparezcan: -Roedor, -"Jack Russell" </label>
+                                    <label for="puntos">Ingresa dos puntos entre los números y agrega una unidad de medida: 10..35 lb, $300..$500, 2010..2011.
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+                            <div class="formulario__boton">
+                                <input type="submit" value="Buscar">
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div> <!--.CONTENIDO HERO-->
+
+                </section>
+
+        </main>
+
+    </body>
+</html>
